@@ -14,93 +14,61 @@
             text-align: center;
             color: #2c3e50;
         }
-        .chart-row {
+        body {
             display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        .chart-col {
-            flex: 1;
-            min-width: 400px;
+            flex-direction: column;
+            align-items: center;
         }
     </style>
 </head>
 <body>
 
-<!-- Linha 1: Gráficos 1 e 2 -->
-<div class="chart-row">
-    <!-- Gráfico 1: Prevalência de TEA por Sexo -->
-    <div class="chart-col">
-        <div class="chart-container">
-            <h2>Prevalência de TEA por Sexo</h2>
-            <canvas id="teaSexo"></canvas>
-        </div>
-    </div>
-
-    <!-- Gráfico 2: Prevalência de TEA por Idade -->
-    <div class="chart-col">
-        <div class="chart-container">
-            <h2>Prevalência de TEA por Faixa Etária</h2>
-            <canvas id="teaIdade"></canvas>
-        </div>
-    </div>
+<!-- Gráfico 1: Prevalência de TEA por Sexo -->
+<div class="chart-container">
+    <h2>Prevalência de TEA por Sexo</h2>
+    <canvas id="teaSexo"></canvas>
 </div>
 
-<!-- Linha 2: Gráficos 3 e 4 -->
-<div class="chart-row">
-    <!-- Gráfico 3: Prevalência de TEA por Cor/Raça -->
-    <div class="chart-col">
-        <div class="chart-container">
-            <h2>Prevalência de TEA por Cor/Raça</h2>
-            <canvas id="teaRaca"></canvas>
-        </div>
-    </div>
-
-    <!-- Gráfico 4: Distribuição Regional de TEA -->
-    <div class="chart-col">
-        <div class="chart-container">
-            <h2>Prevalência de TEA por Região</h2>
-            <canvas id="teaRegiao"></canvas>
-        </div>
-    </div>
+<!-- Gráfico 2: Prevalência de TEA por Idade -->
+<div class="chart-container">
+    <h2>Prevalência de TEA por Faixa Etária</h2>
+    <canvas id="teaIdade"></canvas>
 </div>
 
-<!-- Linha 3: Gráficos 5 e 6 -->
-<div class="chart-row">
-    <!-- Gráfico 5: Matrículas Escolares por Nível -->
-    <div class="chart-col">
-        <div class="chart-container">
-            <h2>Matrículas Escolares de Pessoas com TEA</h2>
-            <canvas id="teaEducacaoNivel"></canvas>
-        </div>
-    </div>
-
-    <!-- Gráfico 6: Taxa de Escolarização por Sexo -->
-    <div class="chart-col">
-        <div class="chart-container">
-            <h2>Taxa de Escolarização por Sexo</h2>
-            <canvas id="teaEscolarizacaoSexo"></canvas>
-        </div>
-    </div>
+<!-- Gráfico 3: Prevalência de TEA por Cor/Raça -->
+<div class="chart-container">
+    <h2>Prevalência de TEA por Cor/Raça</h2>
+    <canvas id="teaRaca"></canvas>
 </div>
 
-<!-- Linha 4: Gráficos 7 e 8 -->
-<div class="chart-row">
-    <!-- Gráfico 7: Nível de Instrução (25+ anos) -->
-    <div class="chart-col">
-        <div class="chart-container">
-            <h2>Nível de Instrução (Pessoas com TEA 25+ anos)</h2>
-            <canvas id="teaNivelInstrucao"></canvas>
-        </div>
-    </div>
+<!-- Gráfico 4: Distribuição Regional de TEA -->
+<div class="chart-container">
+    <h2>Prevalência de TEA por Região</h2>
+    <canvas id="teaRegiao"></canvas>
+</div>
 
-    <!-- Gráfico 8: Domicílios com Moradores TEA -->
-    <div class="chart-col">
-        <div class="chart-container">
-            <h2>Características dos Domicílios com TEA</h2>
-            <canvas id="teaDomicilios"></canvas>
-        </div>
-    </div>
+<!-- Gráfico 5: Matrículas Escolares por Nível -->
+<div class="chart-container">
+    <h2>Matrículas Escolares de Pessoas com TEA</h2>
+    <canvas id="teaEducacaoNivel"></canvas>
+</div>
+
+<!-- Gráfico 6: Taxa de Escolarização por Sexo -->
+<div class="chart-container">
+    <h2>Taxa de Escolarização por Sexo</h2>
+    <canvas id="teaEscolarizacaoSexo"></canvas>
+</div>
+
+<!-- Gráfico 7: Nível de Instrução (25+ anos) -->
+<div class="chart-container">
+    <h2>Nível de Instrução (Pessoas com TEA 25+ anos)</h2>
+    <canvas id="teaNivelInstrucao"></canvas>
+</div>
+
+<!-- Gráfico 8: Domicílios com Moradores TEA -->
+<div class="chart-container">
+    <h2>Características dos Domicílios com TEA</h2>
+    <canvas id="teaDomicilios"></canvas>
 </div>
 
 <script>
